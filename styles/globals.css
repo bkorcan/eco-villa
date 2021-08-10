@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+.rdp-day_selected{
+  background-color: #fff !important;
+  color: #000 !important;
+}

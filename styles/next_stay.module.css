@@ -1,0 +1,38 @@
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+    height: 330px;
+    /* background-color: #fafafa; */
+}
+.title{
+    color: #444;
+    padding-left: 10px;
+    margin-top: 50px;
+
+}
+.content{
+display: flex;
+justify-content: space-between;
+}
+.box{
+width: 30%;
+height: 260px;
+/* background-color: #ccc; */
+position: relative;
+}
+.boxTitle{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    bottom: 5px;
+    left: 10px;
+}
+.boxNumbers{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    bottom: 5px;
+    right: 10px;
+}

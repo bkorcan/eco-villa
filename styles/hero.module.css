@@ -1,0 +1,76 @@
+.container {
+    position: relative;
+    max-width: 1340px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+    border-radius: 10px;
+    /* background-color: #4791db; */
+}
+
+.filterContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    height: 50px;
+    /* border: 1px solid #fafafa; */
+    margin-left: calc(50% - 290px);
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #fff !important;
+    line-height: 2.5 !important;
+}
+.buttonSearch{
+    background-color: #fff !important;
+    line-height: 2.6 !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    margin-left: calc(50% - 92px) !important;
+    margin-top: 20px !important;
+
+}
+
+.destinationSub {
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+    top: 50px;
+    left: 0;
+}
+
+.guestSub {
+    position: absolute;
+    width: 185px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+    top: 50px;
+    left: 0;
+}
+
+.checkinSub {
+    position: absolute;
+    width: 305px;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+    top: 50px;
+    left: 0;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+

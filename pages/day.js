@@ -4,6 +4,7 @@ import { useCallback, useState, useRef, useEffect } from 'react';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/style.css';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import { tr } from 'date-fns/locale';
 
 export default function Day({ title, disabled, getDate, month }) {
     const [boxText, setBoxText] = useState(title)
@@ -60,6 +61,7 @@ export default function Day({ title, disabled, getDate, month }) {
                     <DayPicker mode="single" onDayClick={handleDayClick}
                      disabled={disabled}  
                      month={month}
+                     locale={tr}
                  />
                 </div>
             </div>

@@ -7,7 +7,7 @@ import { useCallback, useState, useRef, useEffect } from 'react';
 export default function Destination() {
 
     const [show, setShow] = useState('none')
-    const [destination, setDestination] = useState('Destination')
+    const [destination, setDestination] = useState('where to')
     const node1 = useRef();
     const node2 = useRef();
 

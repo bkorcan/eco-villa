@@ -33,7 +33,7 @@ export default function Day({ title, disabled, getDate, month }) {
             if(title === 'Check In'){
                  getDate(day.toLocaleDateString())
             }
-        },[getDate]
+        }
     )
 
 

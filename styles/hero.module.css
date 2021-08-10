@@ -12,7 +12,7 @@
 .filterContainer {
     display: flex;
     justify-content: space-between;
-    width: 580px;
+    width: 600px;
     height: 50px;
     /* border: 1px solid #fafafa; */
     margin-left: calc(50% - 290px);
@@ -22,6 +22,7 @@
 .button {
     background-color: #fff !important;
     line-height: 2.5 !important;
+    width:  145px !important;
 }
 .buttonSearch{
     background-color: #fff !important;

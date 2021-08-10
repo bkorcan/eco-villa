@@ -8,6 +8,7 @@ import TopNav from './top_nav'
 import NextStay from './next_stay';
 import Image from 'next/image';
 import { useCallback, useState } from 'react';
+import LiveAnywhere from './live_anywhere';
 
 
 
@@ -59,6 +60,7 @@ export default function Home() {
 
       </div>
       <NextStay />
+      <LiveAnywhere/>
     </>
   )
 }

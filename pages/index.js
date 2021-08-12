@@ -5,30 +5,25 @@ import Guest from './guest';
 import SearchIcon from '@material-ui/icons/Search';
 import Day from './day';
 import TopNav from './top_nav'
-import NextStay from './next_stay';
 import Image from 'next/image';
 import { useCallback, useState } from 'react';
 import LiveAnywhere from './live_anywhere';
-
-
-
-
+import Host from './host';
 
 
 export default function Home() {
 
   const [disabled, setDisabled] = useState([])
-  const [ month, setMonth ] = useState(new Date())
+  const [month, setMonth] = useState(new Date())
 
   const getDate = useCallback(
     (date) => {
       let c = new Date(date.split('/')[2], date.split('/')[0] - 1, date.split('/')[1])
-      let d = c.setDate( c.getDate() + 1 )
-      setMonth( new Date( date.split('/')[2], date.split('/')[0] - 1 ) )
+      let d = c.setDate(c.getDate() + 1)
+      setMonth(new Date(date.split('/')[2], date.split('/')[0] - 1))
       setDisabled({ before: d })
     }
   )
-
 
   return (
     <>
@@ -45,8 +40,8 @@ export default function Home() {
 
         <div className={heroCss.filterContainer}  >
           <Destination />
-          <Day title={'Check In'} disabled={[]} getDate={getDate}  month = {new Date()} />
-          <Day title={'Check Out'} disabled={disabled}   month = {month} />
+          <Day title={'Check In'} disabled={[]} getDate={getDate} month={new Date()} />
+          <Day title={'Check Out'} disabled={disabled} month={month} />
           <Guest />
         </div>
 
@@ -56,11 +51,12 @@ export default function Home() {
         >
           Search
         </Button>
-
-
       </div>
-      <NextStay />
-      <LiveAnywhere/>
+      <LiveAnywhere />
+      <h2 style={{maxWidth:1340, margin:'0 auto', marginTop:40, color:'#444'}} > Become A Host</h2>
+      <Host/>
+      <div style={{ height: 200 }} ></div>
+
     </>
   )
 }

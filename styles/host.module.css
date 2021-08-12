@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    max-width: 1340px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.titleContainer {
+    position: relative !important;
+    display: inline-block !important;
+    background-color:rgba(0, 0, 0, .3);
+    color: #fff;
+    left: 30px;
+    top: 280px;
+}
+
+.title {
+    font-size: 30px;
+    margin: 0 !important;
+    padding: 10px 10px;
+}
+.tel{
+    font-size: 23px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}

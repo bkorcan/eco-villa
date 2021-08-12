@@ -1,0 +1,25 @@
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.main{
+    display: flex !important;
+    justify-content:space-between !important;
+    height: 350px !important;
+    max-width: 1340px !important;
+}
+.child{
+    width: 31% !important;
+    position: relative;
+}
+.imageTitle{
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 2px;
+    left: 0px;
+    bottom: 0px;
+    background-color:rgba(0,0,0,.3) ;
+    padding: 10px 30px;
+}

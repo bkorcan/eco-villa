@@ -5,6 +5,8 @@ import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import { useCallback, useState, useRef, useEffect } from 'react';
 import RemoveIcon from '@material-ui/icons/Remove';
 import AddIcon from '@material-ui/icons/Add';
+import Style from '../styles/grid_hero.module.css'
+
 
 
 export default function Guest() {
@@ -43,7 +45,7 @@ export default function Guest() {
             style={{ display: 'inline-block', position: 'relative' }}
             ref={node2}
         >
-            <Button className={heroCss.button}
+            <Button  className={Style.button}
                 onClick={handleClick}
                 variant='contained'
                 startIcon={<PeopleAltIcon color='primary' />}
@@ -51,7 +53,7 @@ export default function Guest() {
               Guests: {adult+kid}
             </Button>
             {/* Sub */}
-            <div className={heroCss.guestSub}
+            <div className={Style.guestSub}
                 style={{ display: show }}
                 ref={node1}
             >

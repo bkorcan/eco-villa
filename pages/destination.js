@@ -1,7 +1,8 @@
-import heroCss from '../styles/hero.module.css'
 import Button from '@material-ui/core/Button';
 import NotListedLocationIcon from '@material-ui/icons/NotListedLocation';
 import { useCallback, useState, useRef, useEffect } from 'react';
+import Style from '../styles/grid_hero.module.css'
+
 
 
 export default function Destination() {
@@ -22,11 +23,13 @@ export default function Destination() {
             if (node1.current.contains(e.target) || node2.current.contains(e.target)) {
                 return;
             }
-            setShow('none')
+            setShow('none'); 
         }, [node1, node2]
     );
 
-    const handleClick = () => { show === 'none' ? setShow('block') : setShow('none'); }
+    const handleClick = () => {
+         show === 'none' ? setShow('block') : setShow('none'); 
+    console.log('clicked') }
     const handleButton = (e) => { setDestination(e.target.textContent); setShow('none') }
 
     return (
@@ -34,7 +37,7 @@ export default function Destination() {
             style={{ display: 'inline-block', position: 'relative' }}
             ref={node2}
         >
-            <Button className={heroCss.button}
+            <Button  className={Style.button}
                 onClick={handleClick}
                 variant='contained'
                 startIcon={<NotListedLocationIcon color='primary' />}
@@ -42,7 +45,7 @@ export default function Destination() {
                 {destination}
             </Button>
             {/* Sub */}
-            <div className={heroCss.destinationSub}
+            <div className={Style.destinationSub}
                 style={{ display: show }}
                 ref={node1}
             >

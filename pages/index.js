@@ -9,7 +9,8 @@ import Image from 'next/image';
 import { useCallback, useState } from 'react';
 import LiveAnywhere from './live_anywhere';
 import Host from './host';
-
+import Footer from './footer';
+import GridHero from './grid_hero';
 
 export default function Home() {
 
@@ -38,12 +39,13 @@ export default function Home() {
         />
         <h1 style={{ position: 'absolute', color: '#666', top: 170, right: 20 }} >Live Anywhere</h1>
 
-        <div className={heroCss.filterContainer}  >
+        {/* <div className={heroCss.filterContainer}  >
           <Destination />
           <Day title={'Check In'} disabled={[]} getDate={getDate} month={new Date()} />
           <Day title={'Check Out'} disabled={disabled} month={month} />
           <Guest />
-        </div>
+        </div> */}
+        <GridHero />
 
         <Button className={heroCss.buttonSearch}
           variant='contained'
@@ -55,7 +57,10 @@ export default function Home() {
       <LiveAnywhere />
       <h2 style={{maxWidth:1340, margin:'0 auto', marginTop:40, color:'#444'}} > Become A Host</h2>
       <Host/>
-      <div style={{ height: 200 }} ></div>
+      <Footer/>
+
+
+      <div style={{ height: 30 }} ></div>
 
     </>
   )

@@ -1,10 +1,12 @@
-import heroCss from '../styles/hero.module.css'
+
 import Button from '@material-ui/core/Button';
 import { useCallback, useState, useRef, useEffect } from 'react';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/style.css';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import { tr } from 'date-fns/locale';
+import Style from '../styles/grid_hero.module.css'
+
 
 export default function Day({ title, disabled, getDate, month }) {
     const [boxText, setBoxText] = useState(title)
@@ -45,7 +47,7 @@ export default function Day({ title, disabled, getDate, month }) {
             style={{ display: 'inline-block', position: 'relative', zIndex: 10 }}
             ref={node2}
         >
-            <Button className={heroCss.button}
+            <Button  className={Style.button}
                 onClick={handleClick}
                 variant='contained'
                 startIcon={<CalendarTodayIcon color='primary' />}
@@ -53,7 +55,7 @@ export default function Day({ title, disabled, getDate, month }) {
                 {boxText}
             </Button>
             {/* Sub */}
-            <div className={heroCss.checkinSub}
+            <div className={ title === 'Check In' ? Style.checkInSub : Style.checkOutSub }
                 style={{ display: show }}
                 ref={node1}
             >
